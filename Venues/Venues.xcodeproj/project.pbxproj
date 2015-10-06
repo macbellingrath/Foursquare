@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E6914B4D1BC46317006D8A99 /* VenuesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6914B4C1BC46317006D8A99 /* VenuesTableViewController.swift */; };
+		E6A1D1BC1BC4004D003ED4FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1D1BB1BC4004D003ED4FF /* AppDelegate.swift */; };
+		E6A1D1C11BC4004D003ED4FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A1D1BF1BC4004D003ED4FF /* Main.storyboard */; };
+		E6A1D1C31BC4004D003ED4FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A1D1C21BC4004D003ED4FF /* Assets.xcassets */; };
+		E6A1D1C61BC4004D003ED4FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A1D1C41BC4004D003ED4FF /* LaunchScreen.storyboard */; };
+		E6A1D1D11BC4004D003ED4FF /* VenuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1D1D01BC4004D003ED4FF /* VenuesTests.swift */; };
+		E6A1D1DC1BC40151003ED4FF /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1D1DB1BC40151003ED4FF /* Request.swift */; };
+		E6A1D1DE1BC40781003ED4FF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1D1DD1BC40781003ED4FF /* Constants.swift */; };
+		E6A1D1E01BC40E15003ED4FF /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1D1DF1BC40E15003ED4FF /* SwiftyJSON.swift */; };
+		E6A1D1E31BC421C5003ED4FF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1D1E21BC421C5003ED4FF /* MapViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6A1D1CD1BC4004D003ED4FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6A1D1B01BC4004D003ED4FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6A1D1B71BC4004D003ED4FF;
+			remoteInfo = Venues;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E6914B4C1BC46317006D8A99 /* VenuesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuesTableViewController.swift; sourceTree = "<group>"; };
+		E6A1D1B81BC4004D003ED4FF /* Venues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Venues.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6A1D1BB1BC4004D003ED4FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E6A1D1C01BC4004D003ED4FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6A1D1C21BC4004D003ED4FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6A1D1C51BC4004D003ED4FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E6A1D1C71BC4004D003ED4FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6A1D1CC1BC4004D003ED4FF /* VenuesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VenuesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6A1D1D01BC4004D003ED4FF /* VenuesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesTests.swift; sourceTree = "<group>"; };
+		E6A1D1D21BC4004D003ED4FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6A1D1DB1BC40151003ED4FF /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		E6A1D1DD1BC40781003ED4FF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E6A1D1DF1BC40E15003ED4FF /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		E6A1D1E11BC42143003ED4FF /* FoursquarePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FoursquarePlayground.playground; sourceTree = "<group>"; };
+		E6A1D1E21BC421C5003ED4FF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6A1D1B51BC4004D003ED4FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6A1D1C91BC4004D003ED4FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E6A1D1AF1BC4004D003ED4FF = {
+			isa = PBXGroup;
+			children = (
+				E6A1D1BA1BC4004D003ED4FF /* Venues */,
+				E6A1D1CF1BC4004D003ED4FF /* VenuesTests */,
+				E6A1D1B91BC4004D003ED4FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6A1D1B91BC4004D003ED4FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6A1D1B81BC4004D003ED4FF /* Venues.app */,
+				E6A1D1CC1BC4004D003ED4FF /* VenuesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6A1D1BA1BC4004D003ED4FF /* Venues */ = {
+			isa = PBXGroup;
+			children = (
+				E6A1D1BB1BC4004D003ED4FF /* AppDelegate.swift */,
+				E6A1D1DB1BC40151003ED4FF /* Request.swift */,
+				E6914B4C1BC46317006D8A99 /* VenuesTableViewController.swift */,
+				E6A1D1E21BC421C5003ED4FF /* MapViewController.swift */,
+				E6A1D1DD1BC40781003ED4FF /* Constants.swift */,
+				E6A1D1DF1BC40E15003ED4FF /* SwiftyJSON.swift */,
+				E6A1D1BF1BC4004D003ED4FF /* Main.storyboard */,
+				E6A1D1C21BC4004D003ED4FF /* Assets.xcassets */,
+				E6A1D1C41BC4004D003ED4FF /* LaunchScreen.storyboard */,
+				E6A1D1C71BC4004D003ED4FF /* Info.plist */,
+				E6A1D1E11BC42143003ED4FF /* FoursquarePlayground.playground */,
+			);
+			path = Venues;
+			sourceTree = "<group>";
+		};
+		E6A1D1CF1BC4004D003ED4FF /* VenuesTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6A1D1D01BC4004D003ED4FF /* VenuesTests.swift */,
+				E6A1D1D21BC4004D003ED4FF /* Info.plist */,
+			);
+			path = VenuesTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6A1D1B71BC4004D003ED4FF /* Venues */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6A1D1D51BC4004D003ED4FF /* Build configuration list for PBXNativeTarget "Venues" */;
+			buildPhases = (
+				E6A1D1B41BC4004D003ED4FF /* Sources */,
+				E6A1D1B51BC4004D003ED4FF /* Frameworks */,
+				E6A1D1B61BC4004D003ED4FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Venues;
+			productName = Venues;
+			productReference = E6A1D1B81BC4004D003ED4FF /* Venues.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6A1D1CB1BC4004D003ED4FF /* VenuesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6A1D1D81BC4004D003ED4FF /* Build configuration list for PBXNativeTarget "VenuesTests" */;
+			buildPhases = (
+				E6A1D1C81BC4004D003ED4FF /* Sources */,
+				E6A1D1C91BC4004D003ED4FF /* Frameworks */,
+				E6A1D1CA1BC4004D003ED4FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6A1D1CE1BC4004D003ED4FF /* PBXTargetDependency */,
+			);
+			name = VenuesTests;
+			productName = VenuesTests;
+			productReference = E6A1D1CC1BC4004D003ED4FF /* VenuesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6A1D1B01BC4004D003ED4FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Mac Bellingrath";
+				TargetAttributes = {
+					E6A1D1B71BC4004D003ED4FF = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					E6A1D1CB1BC4004D003ED4FF = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = E6A1D1B71BC4004D003ED4FF;
+					};
+				};
+			};
+			buildConfigurationList = E6A1D1B31BC4004D003ED4FF /* Build configuration list for PBXProject "Venues" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6A1D1AF1BC4004D003ED4FF;
+			productRefGroup = E6A1D1B91BC4004D003ED4FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6A1D1B71BC4004D003ED4FF /* Venues */,
+				E6A1D1CB1BC4004D003ED4FF /* VenuesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6A1D1B61BC4004D003ED4FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6A1D1C61BC4004D003ED4FF /* LaunchScreen.storyboard in Resources */,
+				E6A1D1C31BC4004D003ED4FF /* Assets.xcassets in Resources */,
+				E6A1D1C11BC4004D003ED4FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6A1D1CA1BC4004D003ED4FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6A1D1B41BC4004D003ED4FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6A1D1E31BC421C5003ED4FF /* MapViewController.swift in Sources */,
+				E6A1D1DC1BC40151003ED4FF /* Request.swift in Sources */,
+				E6A1D1DE1BC40781003ED4FF /* Constants.swift in Sources */,
+				E6A1D1E01BC40E15003ED4FF /* SwiftyJSON.swift in Sources */,
+				E6A1D1BC1BC4004D003ED4FF /* AppDelegate.swift in Sources */,
+				E6914B4D1BC46317006D8A99 /* VenuesTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6A1D1C81BC4004D003ED4FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6A1D1D11BC4004D003ED4FF /* VenuesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6A1D1CE1BC4004D003ED4FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6A1D1B71BC4004D003ED4FF /* Venues */;
+			targetProxy = E6A1D1CD1BC4004D003ED4FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E6A1D1BF1BC4004D003ED4FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6A1D1C01BC4004D003ED4FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E6A1D1C41BC4004D003ED4FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6A1D1C51BC4004D003ED4FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6A1D1D31BC4004D003ED4FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E6A1D1D41BC4004D003ED4FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6A1D1D61BC4004D003ED4FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Venues/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.Venues;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E6A1D1D71BC4004D003ED4FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Venues/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.Venues;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E6A1D1D91BC4004D003ED4FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VenuesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.VenuesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Venues.app/Venues";
+			};
+			name = Debug;
+		};
+		E6A1D1DA1BC4004D003ED4FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VenuesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.VenuesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Venues.app/Venues";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6A1D1B31BC4004D003ED4FF /* Build configuration list for PBXProject "Venues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6A1D1D31BC4004D003ED4FF /* Debug */,
+				E6A1D1D41BC4004D003ED4FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6A1D1D51BC4004D003ED4FF /* Build configuration list for PBXNativeTarget "Venues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6A1D1D61BC4004D003ED4FF /* Debug */,
+				E6A1D1D71BC4004D003ED4FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6A1D1D81BC4004D003ED4FF /* Build configuration list for PBXNativeTarget "VenuesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6A1D1D91BC4004D003ED4FF /* Debug */,
+				E6A1D1DA1BC4004D003ED4FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6A1D1B01BC4004D003ED4FF /* Project object */;
+}
