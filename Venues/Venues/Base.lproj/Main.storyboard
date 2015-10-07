@@ -67,7 +67,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tya-Ji-kvs" id="jYr-Ff-WB9">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -103,6 +103,89 @@
             </objects>
             <point key="canvasLocation" x="2225" y="1666"/>
         </scene>
+        <!--Login-->
+        <scene sceneID="uNp-Ux-FPJ">
+            <objects>
+                <viewController id="G2B-J7-eeF" customClass="ProfileViewController" customModule="Venues" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Dr-Sa-UgM"/>
+                        <viewControllerLayoutGuide type="bottom" id="QVB-qS-Sam"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dRJ-EF-YPZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Y9e-Li-9Ru">
+                                <rect key="frame" x="150" y="200" width="300" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiA-vc-mU2">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="36"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5cl-d9-xG7">
+                                        <rect key="frame" x="0.0" y="36" width="300" height="53"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A85-LW-ew8">
+                                        <rect key="frame" x="0.0" y="89" width="300" height="53"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3M-tn-L1m">
+                                        <rect key="frame" x="0.0" y="142" width="300" height="58"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Connect to Foursquare">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="connectToFoursquareButtonPressed:" destination="G2B-J7-eeF" eventType="touchUpInside" id="Fk5-GK-Hzz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="3Gx-xH-9JT"/>
+                                    <constraint firstAttribute="width" constant="300" id="QEq-yM-gcQ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y9e-Li-9Ru" firstAttribute="leading" secondItem="dRJ-EF-YPZ" secondAttribute="leading" constant="20" id="2ZD-of-26K"/>
+                            <constraint firstItem="Y9e-Li-9Ru" firstAttribute="centerY" secondItem="dRJ-EF-YPZ" secondAttribute="centerY" id="QAF-OY-g7H"/>
+                            <constraint firstItem="Y9e-Li-9Ru" firstAttribute="centerX" secondItem="dRJ-EF-YPZ" secondAttribute="centerX" id="RMD-cq-riI"/>
+                            <constraint firstAttribute="trailing" secondItem="Y9e-Li-9Ru" secondAttribute="trailing" constant="20" id="SwS-8w-wP4"/>
+                            <constraint firstItem="QVB-qS-Sam" firstAttribute="top" secondItem="Y9e-Li-9Ru" secondAttribute="bottom" id="cCv-UN-aYu"/>
+                            <constraint firstItem="Y9e-Li-9Ru" firstAttribute="top" secondItem="8Dr-Sa-UgM" secondAttribute="bottom" id="dZt-g9-vs7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2ZD-of-26K"/>
+                                <exclude reference="SwS-8w-wP4"/>
+                                <exclude reference="dZt-g9-vs7"/>
+                                <exclude reference="cCv-UN-aYu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Login" id="3Oz-V0-RUA"/>
+                    <connections>
+                        <outlet property="connectButton" destination="P3M-tn-L1m" id="58p-kd-E9s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TtJ-hn-hgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2072" y="2606"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6Vn-Ja-xkv">
             <objects>
@@ -116,6 +199,7 @@
                     <connections>
                         <segue destination="DRi-0v-enC" kind="relationship" relationship="viewControllers" id="DTV-Jh-CWr"/>
                         <segue destination="dUC-rg-rCr" kind="relationship" relationship="viewControllers" id="QiN-St-d6v"/>
+                        <segue destination="G2B-J7-eeF" kind="relationship" relationship="viewControllers" id="fSc-CG-otz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BH8-H8-XbO" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E666EB0E1BC5619F00837F85 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E666EB0D1BC5619F00837F85 /* ProfileViewController.swift */; };
+		E666EB0F1BC5619F00837F85 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E666EB0D1BC5619F00837F85 /* ProfileViewController.swift */; };
 		E6914B4D1BC46317006D8A99 /* VenuesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6914B4C1BC46317006D8A99 /* VenuesTableViewController.swift */; };
 		E6A1D1BC1BC4004D003ED4FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1D1BB1BC4004D003ED4FF /* AppDelegate.swift */; };
 		E6A1D1C11BC4004D003ED4FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A1D1BF1BC4004D003ED4FF /* Main.storyboard */; };
@@ -30,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E666EB0D1BC5619F00837F85 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E6914B4C1BC46317006D8A99 /* VenuesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuesTableViewController.swift; sourceTree = "<group>"; };
 		E6A1D1B81BC4004D003ED4FF /* Venues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Venues.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A1D1BB1BC4004D003ED4FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,11 +90,12 @@
 			isa = PBXGroup;
 			children = (
 				E6A1D1BB1BC4004D003ED4FF /* AppDelegate.swift */,
-				E6A1D1DB1BC40151003ED4FF /* Request.swift */,
-				E6914B4C1BC46317006D8A99 /* VenuesTableViewController.swift */,
-				E6A1D1E21BC421C5003ED4FF /* MapViewController.swift */,
 				E6A1D1DD1BC40781003ED4FF /* Constants.swift */,
+				E6A1D1E21BC421C5003ED4FF /* MapViewController.swift */,
+				E666EB0D1BC5619F00837F85 /* ProfileViewController.swift */,
+				E6A1D1DB1BC40151003ED4FF /* Request.swift */,
 				E6A1D1DF1BC40E15003ED4FF /* SwiftyJSON.swift */,
+				E6914B4C1BC46317006D8A99 /* VenuesTableViewController.swift */,
 				E6A1D1BF1BC4004D003ED4FF /* Main.storyboard */,
 				E6A1D1C21BC4004D003ED4FF /* Assets.xcassets */,
 				E6A1D1C41BC4004D003ED4FF /* LaunchScreen.storyboard */,
@@ -214,6 +218,7 @@
 				E6A1D1DC1BC40151003ED4FF /* Request.swift in Sources */,
 				E6A1D1DE1BC40781003ED4FF /* Constants.swift in Sources */,
 				E6A1D1E01BC40E15003ED4FF /* SwiftyJSON.swift in Sources */,
+				E666EB0E1BC5619F00837F85 /* ProfileViewController.swift in Sources */,
 				E6A1D1BC1BC4004D003ED4FF /* AppDelegate.swift in Sources */,
 				E6914B4D1BC46317006D8A99 /* VenuesTableViewController.swift in Sources */,
 			);
@@ -223,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E666EB0F1BC5619F00837F85 /* ProfileViewController.swift in Sources */,
 				E6A1D1D11BC4004D003ED4FF /* VenuesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

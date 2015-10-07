@@ -7,16 +7,37 @@
 //
 
 import UIKit
-
+import SafariServices
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, SFSafariViewControllerDelegate {
 
     var window: UIWindow?
+    var safariVC: SFSafariViewController!
+
+    
+    func attemptLogin() {
+        print(window?.rootViewController)
+        let url = NSURL(string: "https://foursquare.com/oauth2/authenticate?client_id=" + CLIENT_ID + "&response_type=code&redirect_uri=http://macbellingrath.com")
+        
+        if let login = url {
+            
+            print(login)
+            
+            safariVC = SFSafariViewController(URL: login)
+            
+            safariVC!.delegate = self
+            
+            self.window?.rootViewController?.presentViewController(self.safariVC, animated: true, completion: nil)
+            
+        }
+    }
+
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        attemptLogin()
         return true
     }
 
@@ -41,7 +62,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    
+    func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
+      
+        return true
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        
+        print(url.scheme)
+        print(url)
+        
+        url.query!.componentsSeparatedByString("&")
+        // just making sure we send the notification when the URL is opened in SFSafariViewController
+        if (sourceApplication == "com.apple.SafariViewService") {
+            NSNotificationCenter.defaultCenter().postNotificationName(kSafariViewControllerCloseNotification, object: url)
+            return true
+        }
+        return true
+    }
+   
 
 }
 

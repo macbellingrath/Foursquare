@@ -15,15 +15,19 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     var location: CLLocation?
     
+
+    
     @IBOutlet weak var mapView: MKMapView! {
         didSet {
             
             mapView.delegate = self
+            mapView.showsUserLocation = true
+            
             
         }
     }
     
-    var locationManager = CLLocationManager() {
+    var locationManager: CLLocationManager! {
       
         didSet {
             
@@ -37,7 +41,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        
+        locationManager = CLLocationManager()
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: "presentSearchEntryView")
 
         // Do any additional setup after loading the view.
@@ -61,8 +65,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
         //
     }
-    
-    
+
     
     //MARK: - Search Bar Delegate Methods
     
@@ -84,10 +87,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     //MARK: - Location Manager
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
        
         if let location = locations.first {
             
             Request.session().getVenuesWithLocation(location) {
+                
+                var _annotations = [MKAnnotation]()
             
                 // add annotations to mv
                 for venue in Request.session().venues {
@@ -109,14 +115,18 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
                         
                         annotion.coordinate = coord
                         annotion.title = title
+    
                     
                         self.mapView.addAnnotation(annotion)
+                        _annotations.append(annotion)
                         
                     }
                 }
+                self.mapView.showAnnotations(_annotations, animated: true)
             }
-            
+        
         }
+        
     }
   
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
@@ -128,32 +138,47 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     //MARK: - MapView
     
-//    
+    
 //    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
-//    
 //        
-////        configure annotation
+//        var annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier("Pin")
 //        
-//       let annotation =  mapView.dequeueReusableAnnotationViewWithIdentifier("Pin")
-//    
-//        if annotation == nil {
-//            annotation = MKPointAnnotation()
-//        
+//        if annotationView == nil {
+//            annotationView?.image =
+//            
+//            
+//            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "Pin")
+//            annotationView
+////            annotationView?.leftCalloutAccessoryView = UIImageView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+////            let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+////            imageView.image = UIImage(named: "swift")
+////            annotationView?.leftCalloutAccessoryView = imageView
+//            
+//            
+//            
+//            
+//            
 //        }
 //        
-//    }
-    
-
-    
-
-//    
-//    // MARK: - Navigation
+//        
+//        let button = UIButton(type: .DetailDisclosure)
+//       
+//        button.addTarget(self, action: "showVenueDetail", forControlEvents: .TouchUpInside)
+//        
+//        
+//        annotationView?.rightCalloutAccessoryView = button
+//        
+//        return annotationView
 //
-//    // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        // Get the new view controller using segue.destinationViewController.
-//        // Pass the selected object to the new view controller.
+//        
 //    }
-//    
+    
+    
+    //MARK: - Segue
+    
+    func showVenueDetail() {
+        print("ShowVenueDetail Tapped")
+    }
+    
 
 }
